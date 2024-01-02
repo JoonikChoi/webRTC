@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="importmap">
+        {
+          "imports": {
+            "socket.io-client": "https://cdn.socket.io/4.4.1/socket.io.esm.min.js"
+         }
+        }
+    </script>
+</head>
+<body>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="module" src="/js/webrtc.js"></script>
+    Index page
+    <br />
+    <div>
+        
+    <!-- <div id ="localPanel" style="width: 100%; height: 300px; border: 1px solid black;">
+    </div>
+    <div id ="remotePanel">
+    </div> -->
+    <video id="localVideo" style="border: 3px solid black;" autoplay playsinline></video>
+    <video id="remoteVideo" style="border: 3px solid black;" autoplay playsinline></video>
+    
+    <br />
+    
+    <button id="startBtn">Start</button>
+    <!-- <button id="callButton">Call</button>
+    <button id="hangupButton">Hang Up</button> -->
+
+</body>
+</html>
